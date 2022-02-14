@@ -213,6 +213,15 @@
 
     menu.classList.toggle("invisible");
   })
+  
+    window.addEventListener("resize", () => {
+
+  	if(window.innerWidth >= 768) {
+
+  		menu.classList.add("invisible");
+  	}
+  })
+  
 </script>
 
 </body>
