@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/final.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <style type="text/css">
+    
+    header {
+
+      background: url("images/mobile/image-header.jpg") no-repeat center;
+      background-size: cover;
+    }
+
+    #cherry {
+
+      background: url("images/mobile/image-graphic-design.jpg") no-repeat center;
+      background-size: cover;
+    }
+
+    #orange {
+
+      background: url("images/mobile/image-photography.jpg") no-repeat center;
+      background-size: cover;
+    }
+
+    @media screen and (min-width: 768px) {
+
+      header {
+
+        background: url("images/desktop/image-header.jpg") no-repeat top center;
+        background-size: cover;
+      }
+
+      #cherry {
+
+      background: url("images/desktop/image-graphic-design.jpg") no-repeat center;
+      background-size: cover;
+     }
+
+      #orange {
+
+      background: url("images/desktop/image-photography.jpg") no-repeat center;
+      background-size: cover;
+      
+      } 
+
+    }
+
+  </style>
+
+</head>
+
+<body class="mx-auto w-screen">
+
+  <header class="h-screen">
+    <nav class="flex justify-between items-center py-8 px-6">
+      <img src="images/logo.svg" alt="logo"/>
+     
+      <a href="#" class="md:hidden"><img src="images/icon-hamburger.svg" alt="hamburger" id="menuMobile"/></a>
+        <div class="hidden md:block font-barlow text-white">
+          <a href="#" class="mx-4 hover:text-black">About</a>
+          <a href="#" class="mx-4 hover:text-black">Services</a> 
+          <a href="#" class="mx-4 hover:text-black">Projects</a> 
+          <a href="#" class="bg-white py-4 px-6 font-fraunces text-black uppercase mx-4 rounded-full text-sm hover:text-white hover:bg-opaci" >Contact</a> 
+        </div>
+    
+    </nav>
+    <div class="menu invisible relative top-6 w-10/12 h-72 mx-auto bg-white z-50">
+      <div class="w-0 h-0 border-solid border-t-0 border-r-0 border-b-bottom border-l-right border-t-transparent border-r-transparent border-b-white border-l-transparent absolute -top-6 -right-0"></div>
+      <div class="flex flex-col justify-around text-center font-barlow text-darkgrayblue h-64 text-lg pt-8">
+        <a href="#" class="hover:text-black">About</a>
+        <a href="#" class="hover:text-black">Services</a> 
+        <a href="#" class="hover:text-black">Projects</a> 
+        <a href="#" class="bg-yellow font-fraunces text-verydarkblue uppercase py-4 w-2/5 rounded-full mx-auto text-base hover:text-white hover:bg-yellowhover">Contact</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-around items-center z-10 relative bottom-64 tracking-widest">
+    <h1 class="font-fraunces text-white text-4xl text-center mt-8 md:text-4md">WE ARE CREATIVES</h1>
+    <img src="images/icon-arrow-down.svg" alt="arrow" class="w-10 h-36 mt-20 md:w-6 md:h-20 md:mt-14">
+    </div>
+
+  </header>
+
+  <main>
+
+     <div class="md:grid grid-cols-2">
+    
+      <div>
+        <img src="images/mobile/image-transform.jpg" alt="egg">
+      </div>
+
+      <section class="py-16 px-8 bg-white text-center md:text-left md:order-first md:flex md:justify-center md:items-left md:flex-col md:px-16 md:py-0">
+        <h2 class="font-fraunces text-3xl text-verydarkblue font-black">Transform your brand</h2>
+        <p class="my-6 font-barlow leading-relaxed text-darkgrayblue">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <div class="relative">
+          <a href="#" class="uppercase font-fraunces text-verydarkblue font-black no-underline relative z-10 after:content-[''] after:absolute after:w-32 after:h-2 after:bg-yellow after:rounded-full after:opacity-50 after:bottom-px after:-left-1.5 after:z-1 after:hover:opacity-80">Learn more</a>
+          
+        </div>
+      </section>
+
+      <div>
+        <img src="images/mobile/image-stand-out.jpg" alt="cone">
+      </div>
+
+      <section class="py-16 px-8 bg-white text-center md:text-left md:flex md:justify-center md:items-left md:flex-col md:px-16 md:py-0">
+        <h2 class="font-fraunces text-3xl text-verydarkblue font-black">Stand out to the right audience</h2>
+        <p class="my-6 font-barlow leading-relaxed text-darkgrayblue">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <div class="relative">
+          <a href="#" class="uppercase font-fraunces text-verydarkblue font-black no-underline relative z-10 after:content-[''] after:absolute after:w-32 after:h-2 after:bg-softred after:rounded-full after:opacity-50 after:bottom-px after:-left-1.5 after:z-0 after:hover:opacity-80">Learn more</a>
+          
+        </div>
+      </section>
+
+      <section id="cherry" class="h-screen text-center pb-8 relative flex items-end md:h-altura">
+
+        <div class="absolute px-6 font-semibold md:px-20 md:top-60">
+          <h2 class="font-fraunces text-3xl text-darkdescyan font-black">Graphic Design</h2>
+          <p class="my-8 font-barlow leading-relaxed text-darkdescyan">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        
+      </section>
+
+      <section id="orange" class="h-screen text-center pb-8 relative flex items-end md:h-altura">
+        <div class="absolute px-6 font-semibold md:px-20 md:top-60">
+          <h2 class="font-fraunces text-3xl text-darkblue font-black">Photography</h2>
+          <p class="my-8 font-barlow leading-relaxed text-darkblue">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+        
+      </section>
+
+    </div>
+
+       <section class="px-6 py-12 text-center md:py-24 md:px-12">
+
+        <h2 class="text-grayblue uppercase font-fraunces tracking-client font-black">Client testimonials</h2>
+
+        <div class="flex flex-col justify-center items-center md:flex-row md:justify-around">
+
+          <div class="py-12 md:px-4 md:pt-14 md:pb-2">
+            <img src="images/image-emily.jpg" alt="user" class="rounded-full w-16 mx-auto">
+            <p class="text-verygrayblue font-barlow my-8">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <h3 class="font-fraunces text-verydarkblue font-black mb-4">Emily R.</h3>
+            <p class="text-grayblue font-barlow text-sm">Marketing Director</p>
+          </div>
+
+          <div class="py-12 md:px-4 md:pt-14 md:pb-2">
+            <img src="images/image-thomas.jpg" alt="user" class="rounded-full w-16 mx-auto">
+            <p class="text-verygrayblue font-barlow my-8">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <h3 class="font-fraunces text-verydarkblue font-black mb-4">Thomas S.</h3>
+            <p class="text-grayblue font-barlow text-sm">Chief Operating Officer</p>
+          </div>
+
+          <div class="py-12 md:px-1 md:pt-14 md:pb-2">
+            <img src="images/image-jennie.jpg" alt="user" class="rounded-full w-16 mx-auto">
+            <p class="text-verygrayblue font-barlow my-8">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <h3 class="font-fraunces text-verydarkblue font-black mb-4">Jennie F.</h3>
+            <p class="text-grayblue font-barlow text-sm">Business Owner</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="grid grid-cols-2 md:grid-cols-4">
+
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="sweet">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="sweet">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="sweet">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sweet">
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="bg-footer py-14 px-8 flex flex-col justify-center">
+
+    <div class="mb-12">
+    
+      <img src="images/logofooter.svg" alt="logo" class="mx-auto w-36">
+
+      <div class="flex justify-around items-center font-barlow mt-8 text-footertext text-lg md:mt-10 md:justify-center">
+        <a href="#" class="hover:text-white md:mx-8">About</a>
+        <a href="#" class="hover:text-white md:mx-8">Services</a>
+        <a href="#" class="hover:text-white md:mx-8">Projects</a>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center items-center my-6">
+      <a href="#" class="hover:brightness-5"><img src="images/icon-facebook.svg" alt="facebook" class="mx-3.5"></a>
+      <a href="#" class="hover:brightness-5"><img src="images/icon-instagram.svg" alt="instagram" class="mx-3.5"></a>
+      <a href="#" class="hover:brightness-5"><img src="images/icon-twitter.svg" alt="twitter" class="mx-3.5"></a>
+      <a href="#" class="hover:brightness-5"><img src="images/icon-pinterest.svg" alt="pinterest" class="mx-3.5"></a>
+    </div>
+
+  </footer>
+  
+<script>
+  let button = document.getElementById("menuMobile");
+  let menu = document.querySelector(".menu");
+
+  button.addEventListener("click", () => {
+
+    menu.classList.toggle("invisible");
+  })
+</script>
+
+</body>
+</html>
